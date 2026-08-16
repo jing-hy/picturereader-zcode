@@ -5,9 +5,13 @@
 > 让模型像多模态模型一样"看"图：描述场景、主体、环境、光线与语义内容。
 > **纯本地、零外部模型依赖、零 API key、零 Python（PaddleOCR 为可选增强）**。
 
-本仓库是原 [picturereader](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) DSH 插件的 ZCode 移植版：
+本仓库是原 [picturereader](https://github.com/jing-hy/picturereader)（DeepSeek Harness 插件，独立仓库）的 ZCode 移植版：
 三个工具通过 **MCP server**（`mcp/server.js`，stdio）暴露给 ZCode，读图方法论作为
 **skill**（`skills/image-reading/`）随插件分发。业务逻辑 `src/core.js` 与源插件完全一致。
+
+> **性能提示**：本版工具经 MCP stdio 子进程暴露，每次调用都有进程通信与 JSON-RPC
+> 序列化开销，**速度明显慢于 DSH 版**（DSH 版为插件内直接调用）。高频/批量看图请
+> 使用 [DSH 版](https://github.com/jing-hy/picturereader)；本版适合 ZCode 环境下的轻量、偶发看图。
 
 ## 这是什么
 
