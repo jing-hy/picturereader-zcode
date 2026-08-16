@@ -7,7 +7,7 @@
     "plugins":  [
                     {
                         "name":  "picturereader",
-                        "version":  "1.0.1",
+                        "version":  "1.0.2",
                         "description":  "Gives text-only models the ability to \u0027read\u0027 images: downscale + color-quantize PNG/JPEG/GIF/BMP into a coarse pixel grid, OCR text locally, and sample exact pixels for material judgment. No vision model or API key required.",
                         "category":  "productivity",
                         "source":  "."

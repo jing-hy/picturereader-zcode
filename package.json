@@ -1,6 +1,6 @@
 {
     "name":  "picturereader-zcode",
-    "version":  "1.0.1",
+    "version":  "1.0.2",
     "description":  "ZCode plugin: pixel-to-text image reading for text-only models. Downscales and color-quantizes PNG/JPEG/GIF/BMP and feeds the coarse pixel grid to the model so it can \u0027see\u0027 layout, colors and rough shapes without a vision model. Ported from the picturereader DSH plugin.",
     "type":  "module",
     "main":  "src/core.js",
